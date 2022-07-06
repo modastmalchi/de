@@ -111,6 +111,7 @@ $dark-fo-color: #fcfcfc;
                 padding: 1rem 0;
                 color:  $text-1;
                 font-size: 2rem;
+                line-height: 1.4rem;
             }
             .button {
                 background-color: $button-bg;
@@ -131,6 +132,50 @@ $dark-fo-color: #fcfcfc;
                 padding: 1rem;
                 background-color: $button-bg;
                 margin-right: .5rem;
+            }
+            .specifications{
+                display: flex;
+                padding: 1rem 0;
+                justify-content: space-between;
+
+            }
+            .specification_title{
+                padding: 0 0 1rem;
+                font-size: 1.5rem;
+                color: #999999;
+            }
+            .specification{
+                width: 48%;
+            }
+            .company{
+                width: 48%;
+            }
+          
+            .specification_filds{
+                display: flex;
+                padding: .5rem;
+                justify-content: space-between;
+            }
+            .specification_q{
+                width: 25%;
+            }
+           .size_items, .color_items{
+                display: flex;
+                align-items: center;
+            }
+            .color_items li ,.size_items li{
+                width: 2rem;
+                height: 2rem;
+                line-height: 2rem;
+                text-align: center;
+                margin: 0 .2rem
+            }
+            .size_items li{
+                border: 1px solid #ccc;
+            }
+            .size_items li.active{
+                background-color :$innertext;
+                color: white;
             }
         }
     }

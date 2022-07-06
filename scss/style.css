@@ -103,7 +103,8 @@ table {
   .lightmode main .desc {
     padding: 1rem 0;
     color: #bababa;
-    font-size: 2rem; }
+    font-size: 2rem;
+    line-height: 1.4rem; }
   .lightmode main .button {
     background-color: #f7f7f7;
     border: 0;
@@ -121,6 +122,38 @@ table {
     padding: 1rem;
     background-color: #f7f7f7;
     margin-right: .5rem; }
+  .lightmode main .specifications {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between; }
+  .lightmode main .specification_title {
+    padding: 0 0 1rem;
+    font-size: 1.5rem;
+    color: #999999; }
+  .lightmode main .specification {
+    width: 48%; }
+  .lightmode main .company {
+    width: 48%; }
+  .lightmode main .specification_filds {
+    display: flex;
+    padding: .5rem;
+    justify-content: space-between; }
+  .lightmode main .specification_q {
+    width: 25%; }
+  .lightmode main .size_items, .lightmode main .color_items {
+    display: flex;
+    align-items: center; }
+  .lightmode main .color_items li, .lightmode main .size_items li {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 0.2rem; }
+  .lightmode main .size_items li {
+    border: 1px solid #ccc; }
+  .lightmode main .size_items li.active {
+    background-color: #333333;
+    color: white; }
 
 .darkmode html, .darkmode body {
   background-color: #333333; }
@@ -195,7 +228,8 @@ table {
   .darkmode main .desc {
     padding: 1rem 0;
     color: #fcfcfc;
-    font-size: 2rem; }
+    font-size: 2rem;
+    line-height: 1.4rem; }
   .darkmode main .button {
     background-color: #f7f7f7;
     border: 0;
@@ -213,5 +247,37 @@ table {
     padding: 1rem;
     background-color: #f7f7f7;
     margin-right: .5rem; }
+  .darkmode main .specifications {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between; }
+  .darkmode main .specification_title {
+    padding: 0 0 1rem;
+    font-size: 1.5rem;
+    color: #999999; }
+  .darkmode main .specification {
+    width: 48%; }
+  .darkmode main .company {
+    width: 48%; }
+  .darkmode main .specification_filds {
+    display: flex;
+    padding: .5rem;
+    justify-content: space-between; }
+  .darkmode main .specification_q {
+    width: 25%; }
+  .darkmode main .size_items, .darkmode main .color_items {
+    display: flex;
+    align-items: center; }
+  .darkmode main .color_items li, .darkmode main .size_items li {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0 0.2rem; }
+  .darkmode main .size_items li {
+    border: 1px solid #ccc; }
+  .darkmode main .size_items li.active {
+    background-color: #fcfcfc;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
