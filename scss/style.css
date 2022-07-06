@@ -30,12 +30,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.lightmode html, .lightmode body {
+  background-color: #fcfcfc; }
 .lightmode main {
   background-color: #fcfcfc;
   margin: 0 auto;
   width: 1200px; }
   .lightmode main * {
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-transform: capitalize; }
   .lightmode main header {
     display: flex;
     padding: 1rem 0;
@@ -65,13 +68,41 @@ table {
     display: flex;
     justify-content: space-around;
     align-items: center; }
+  .lightmode main .boxtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0; }
+  .lightmode main .boxtitle h1 {
+    font-size: 2rem; }
+  .lightmode main .like {
+    padding: 1rem;
+    color: #ff0c63;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid rgba(255, 12, 99, 0.5);
+    background-color: #fff5f8; }
+  .lightmode main .like i {
+    margin-right: 1rem;
+    margin-left: .5rem;
+    font-size: 1.2rem; }
+  .lightmode main .like span {
+    font-size: 1.2rem; }
   .lightmode main .right {
     background-color: #d7d7d7;
     height: 100%;
     position: relative;
     width: 29%; }
+  .lightmode main .product {
+    display: flex; }
+  .lightmode main .content {
+    padding: 0 0 0 2rem; }
+  .lightmode main .desc {
+    padding: 1rem 0;
+    color: #bababa;
+    font-size: 2rem; }
   .lightmode main .button {
-    background-color: #bc6a49;
+    background-color: #f7f7f7;
     border: 0;
     border-radius: 10px;
     bottom: 10px;
@@ -81,13 +112,22 @@ table {
     padding: 1em 2em;
     position: absolute;
     right: 10px; }
+  .lightmode main .tag_lists {
+    display: flex; }
+  .lightmode main .tag_lists_item {
+    padding: 1rem;
+    background-color: #f7f7f7;
+    margin-right: .5rem; }
 
+.darkmode html, .darkmode body {
+  background-color: #c6538c; }
 .darkmode main {
   background-color: #c6538c;
   margin: 0 auto;
   width: 1200px; }
   .darkmode main * {
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-transform: capitalize; }
   .darkmode main header {
     display: flex;
     padding: 1rem 0;
@@ -117,13 +157,41 @@ table {
     display: flex;
     justify-content: space-around;
     align-items: center; }
+  .darkmode main .boxtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0; }
+  .darkmode main .boxtitle h1 {
+    font-size: 2rem; }
+  .darkmode main .like {
+    padding: 1rem;
+    color: #ff0c63;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid rgba(255, 12, 99, 0.5);
+    background-color: #fff5f8; }
+  .darkmode main .like i {
+    margin-right: 1rem;
+    margin-left: .5rem;
+    font-size: 1.2rem; }
+  .darkmode main .like span {
+    font-size: 1.2rem; }
   .darkmode main .right {
     background-color: #c6538c;
     height: 100%;
     position: relative;
     width: 29%; }
+  .darkmode main .product {
+    display: flex; }
+  .darkmode main .content {
+    padding: 0 0 0 2rem; }
+  .darkmode main .desc {
+    padding: 1rem 0;
+    color: #c6538c;
+    font-size: 2rem; }
   .darkmode main .button {
-    background-color: #481b16;
+    background-color: #f7f7f7;
     border: 0;
     border-radius: 10px;
     bottom: 10px;
@@ -133,5 +201,11 @@ table {
     padding: 1em 2em;
     position: absolute;
     right: 10px; }
+  .darkmode main .tag_lists {
+    display: flex; }
+  .darkmode main .tag_lists_item {
+    padding: 1rem;
+    background-color: #f7f7f7;
+    margin-right: .5rem; }
 
 /*# sourceMappingURL=style.css.map */

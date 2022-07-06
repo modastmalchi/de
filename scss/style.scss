@@ -3,7 +3,8 @@
 $light-f-color: #fcfcfc;
 $light-s-color: #bababa;
 $light-th-color: #d7d7d7;
-$light-fo-color: #c6538c;
+$light-fo-color: #333333;
+$like: #ff0c63;
 $dark-f-color: #c6538c;
 $dark-s-color: #c6538c;
 $dark-th-color: #c6538c;
@@ -11,8 +12,11 @@ $dark-fo-color: #c6538c;
 
 @import 'reset';
 
-@mixin themable($theme-name, $container-bg, $left-bg, $right-bg, $innertext, $button-bg) {
+@mixin themable($theme-name, $container-bg, $text-1, $text-2, $innertext, $button-bg,$likecolor) {
     .#{$theme-name} {
+        html ,body{
+            background-color: $container-bg;
+        }
         main {
             background-color: $container-bg;
             margin: 0 auto;
@@ -20,6 +24,7 @@ $dark-fo-color: #c6538c;
  
             * {
                 font-size: 1rem;
+                text-transform: capitalize;
             }
             header{
                 display: flex;
@@ -42,7 +47,7 @@ $dark-fo-color: #c6538c;
                 width: 100%;
                 padding: 15px;
                 border-color: transparent;
-                box-shadow: 0 0 0 1px  $left-bg;
+                box-shadow: 0 0 0 1px  $text-1;
 
             }
             .box-search_submit{
@@ -50,7 +55,7 @@ $dark-fo-color: #c6538c;
                 right: 30px;
                 top: 12px;
                 font-size: 30px;
-                color: $left-bg;
+                color: $text-1;
             }
             .icon{
                 width: 20%;
@@ -59,14 +64,49 @@ $dark-fo-color: #c6538c;
                 align-items: center;
 
             }
- 
+            .boxtitle{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1rem 0;
+            }
+            .boxtitle h1{
+                font-size: 2rem;
+            }
+            .like{
+                padding: 1rem ;
+                color:$likecolor ;
+                text-decoration: none;
+                display: flex;
+                border: 1px solid rgba($likecolor, .5) ;
+                background-color: #fff5f8;
+
+            }
+            .like i{
+                margin-right: 1rem;
+                margin-left: .5rem;
+                font-size: 1.2rem;;
+            }
+            .like span{
+                font-size: 1.2rem;
+            }
             .right {
-                background-color: $right-bg;
+                background-color: $text-2;
                 height: 100%;
                 position: relative;
                 width: 29%;
             }
- 
+            .product{
+                display: flex;
+            }
+            .content{
+                padding: 0 0 0 2rem;
+            }
+            .desc{
+                padding: 1rem 0;
+                color:  $text-1;
+                font-size: 2rem;
+            }
             .button {
                 background-color: $button-bg;
                 border: 0;
@@ -79,9 +119,17 @@ $dark-fo-color: #c6538c;
                 position: absolute;
                 right: 10px;
             }
+            .tag_lists{
+                display: flex
+            }
+            .tag_lists_item{
+                padding: 1rem;
+                background-color: $button-bg;
+                margin-right: .5rem;
+            }
         }
     }
  }
 
- @include themable(lightmode, $light-f-color, $light-s-color, $light-th-color, $light-fo-color, #bc6a49);
-@include themable(darkmode, $dark-f-color, $dark-s-color, $dark-th-color, $dark-fo-color, #481b16);
+ @include themable(lightmode, $light-f-color, $light-s-color, $light-th-color, $light-fo-color, #f7f7f7,$like);
+@include themable(darkmode, $dark-f-color, $dark-s-color, $dark-th-color, $dark-fo-color, #f7f7f7,$like);
