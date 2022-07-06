@@ -31,7 +31,8 @@ table {
   border-spacing: 0; }
 
 .lightmode html, .lightmode body {
-  background-color: #fcfcfc; }
+  background-color: #fcfcfc;
+  font-family: 'Source Sans Pro', sans-serif; }
 .lightmode .contents {
   width: 100%;
   background-color: #fcfcfc; }
@@ -41,7 +42,8 @@ table {
   width: 1200px; }
   .lightmode main * {
     font-size: 1rem;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    box-sizing: border-box; }
   .lightmode main header {
     display: flex;
     padding: 1rem 0;
@@ -137,7 +139,8 @@ table {
   .lightmode main .specification_filds {
     display: flex;
     padding: .5rem;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .lightmode main .specification_q {
     width: 25%; }
   .lightmode main .size_items, .lightmode main .color_items {
@@ -151,12 +154,62 @@ table {
     margin: 0 0.2rem; }
   .lightmode main .size_items li {
     border: 1px solid #ccc; }
+  .lightmode main .color_items li {
+    border: 1px solid transparent; }
   .lightmode main .size_items li.active {
     background-color: #333333;
     color: white; }
+  .lightmode main .count {
+    display: flex;
+    border: 1px solid #ccc;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+    color: #ccc; }
+  .lightmode main .count li {
+    padding: 0 .5rem;
+    font-size: 1.2rem; }
+  .lightmode main .number {
+    color: #242424; }
+  .lightmode main .add_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .lightmode main .prices, .lightmode main .addtobas {
+    width: 48%; }
+  .lightmode main .prices p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .lightmode main .prices p {
+    font-size: .8rem; }
+  .lightmode main .bigp {
+    font-size: 2.5rem;
+    display: inline-block; }
+  .lightmode main .addtobas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .lightmode main .btn_add {
+    height: 60px;
+    width: 25%;
+    line-height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #ccc; }
+  .lightmode main .btn_add i {
+    font-size: 1.7rem; }
+  .lightmode main .btn_buy {
+    height: 60px;
+    line-height: 60px;
+    width: 71%;
+    font-size: 1.5rem;
+    background-color: #ffbb0d;
+    text-align: center; }
 
 .darkmode html, .darkmode body {
-  background-color: #333333; }
+  background-color: #333333;
+  font-family: 'Source Sans Pro', sans-serif; }
 .darkmode .contents {
   width: 100%;
   background-color: #333333; }
@@ -166,7 +219,8 @@ table {
   width: 1200px; }
   .darkmode main * {
     font-size: 1rem;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    box-sizing: border-box; }
   .darkmode main header {
     display: flex;
     padding: 1rem 0;
@@ -262,7 +316,8 @@ table {
   .darkmode main .specification_filds {
     display: flex;
     padding: .5rem;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .darkmode main .specification_q {
     width: 25%; }
   .darkmode main .size_items, .darkmode main .color_items {
@@ -276,8 +331,57 @@ table {
     margin: 0 0.2rem; }
   .darkmode main .size_items li {
     border: 1px solid #ccc; }
+  .darkmode main .color_items li {
+    border: 1px solid transparent; }
   .darkmode main .size_items li.active {
     background-color: #fcfcfc;
     color: white; }
+  .darkmode main .count {
+    display: flex;
+    border: 1px solid #ccc;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+    color: #ccc; }
+  .darkmode main .count li {
+    padding: 0 .5rem;
+    font-size: 1.2rem; }
+  .darkmode main .number {
+    color: #242424; }
+  .darkmode main .add_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .darkmode main .prices, .darkmode main .addtobas {
+    width: 48%; }
+  .darkmode main .prices p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .darkmode main .prices p {
+    font-size: .8rem; }
+  .darkmode main .bigp {
+    font-size: 2.5rem;
+    display: inline-block; }
+  .darkmode main .addtobas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .darkmode main .btn_add {
+    height: 60px;
+    width: 25%;
+    line-height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #ccc; }
+  .darkmode main .btn_add i {
+    font-size: 1.7rem; }
+  .darkmode main .btn_buy {
+    height: 60px;
+    line-height: 60px;
+    width: 71%;
+    font-size: 1.5rem;
+    background-color: #ffbb0d;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,7 @@ $dark-fo-color: #fcfcfc;
     .#{$theme-name} {
         html ,body{
             background-color: $container-bg;
+            font-family: 'Source Sans Pro', sans-serif;
         }
         .contents{
             width: 100%;
@@ -30,6 +31,7 @@ $dark-fo-color: #fcfcfc;
             * {
                 font-size: 1rem;
                 text-transform: capitalize;
+                box-sizing: border-box;
             }
             header{
                 display: flex;
@@ -155,6 +157,8 @@ $dark-fo-color: #fcfcfc;
                 display: flex;
                 padding: .5rem;
                 justify-content: space-between;
+                align-items: center;
+
             }
             .specification_q{
                 width: 25%;
@@ -173,9 +177,75 @@ $dark-fo-color: #fcfcfc;
             .size_items li{
                 border: 1px solid #ccc;
             }
+            .color_items li{
+                border: 1px solid transparent;
+            }
             .size_items li.active{
                 background-color :$innertext;
                 color: white;
+            }
+            .count{
+                display: flex;
+                border: 1px solid #ccc;
+                height: 2rem;
+                line-height: 2rem;
+                padding: 0 1rem;
+                color: #ccc;
+
+            }
+            .count li{
+                padding: 0 .5rem;
+                font-size: 1.2rem;
+            }
+            .number{
+                color: #242424
+            }
+            .add_price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center
+            }
+            .prices , .addtobas{
+                width: 48%;
+            }
+            .prices p{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .prices p{
+                font-size: .8rem;
+            }
+            .bigp{
+                font-size: 2.5rem;
+                display: inline-block
+            }
+            .addtobas{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .btn_add{
+                height: 60px;
+                width: 25%;
+                line-height: 60px;
+                font-size: 2rem;
+                text-align: center;
+                border: 1px solid #ccc;
+            }
+            .btn_add i{
+                font-size: 1.7rem;
+            }
+            .btn_buy{
+                height: 60px;
+                line-height: 60px;
+                width: 71%;
+                font-size: 1.5rem;
+                background-color: #ffbb0d;
+                text-align: center;
+
+
+
             }
         }
     }
