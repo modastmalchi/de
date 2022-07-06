@@ -142,7 +142,9 @@ table {
     justify-content: space-between;
     align-items: center; }
   .lightmode main .specification_q {
-    width: 25%; }
+    width: 40%; }
+  .lightmode main .specification_a ul {
+    display: flex; }
   .lightmode main .size_items, .lightmode main .color_items {
     display: flex;
     align-items: center; }
@@ -206,6 +208,35 @@ table {
     font-size: 1.5rem;
     background-color: #ffbb0d;
     text-align: center; }
+  .lightmode main .boxsupports {
+    width: 100%;
+    display: flex;
+    background-color: #fafafa;
+    margin-top: 2rem; }
+  .lightmode main .boxsupport {
+    width: 33.3%;
+    padding: 2rem 1rem;
+    text-align: justify; }
+  .lightmode main .boxsupports .active {
+    background-color: #333333;
+    color: white;
+    transform: scale(1.1); }
+  .lightmode main .minlogo {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 50%; }
+  .lightmode main .fa-star {
+    color: #ffbb0d; }
+  .lightmode main .star {
+    margin-left: 1rem; }
+  .lightmode main .back-to-shop {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #8c8c8c; }
+  .lightmode main .back-to-shop i {
+    margin-right: 2rem; }
 
 .darkmode html, .darkmode body {
   background-color: #333333;
@@ -319,7 +350,9 @@ table {
     justify-content: space-between;
     align-items: center; }
   .darkmode main .specification_q {
-    width: 25%; }
+    width: 40%; }
+  .darkmode main .specification_a ul {
+    display: flex; }
   .darkmode main .size_items, .darkmode main .color_items {
     display: flex;
     align-items: center; }
@@ -383,5 +416,34 @@ table {
     font-size: 1.5rem;
     background-color: #ffbb0d;
     text-align: center; }
+  .darkmode main .boxsupports {
+    width: 100%;
+    display: flex;
+    background-color: #fafafa;
+    margin-top: 2rem; }
+  .darkmode main .boxsupport {
+    width: 33.3%;
+    padding: 2rem 1rem;
+    text-align: justify; }
+  .darkmode main .boxsupports .active {
+    background-color: #333333;
+    color: white;
+    transform: scale(1.1); }
+  .darkmode main .minlogo {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 50%; }
+  .darkmode main .fa-star {
+    color: #ffbb0d; }
+  .darkmode main .star {
+    margin-left: 1rem; }
+  .darkmode main .back-to-shop {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #8c8c8c; }
+  .darkmode main .back-to-shop i {
+    margin-right: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

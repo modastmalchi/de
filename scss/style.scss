@@ -161,7 +161,10 @@ $dark-fo-color: #fcfcfc;
 
             }
             .specification_q{
-                width: 25%;
+                width: 40%;
+            }
+            .specification_a ul{
+                display: flex;
             }
            .size_items, .color_items{
                 display: flex;
@@ -243,11 +246,48 @@ $dark-fo-color: #fcfcfc;
                 font-size: 1.5rem;
                 background-color: #ffbb0d;
                 text-align: center;
-
-
+            }
+            .boxsupports{
+                width: 100%;
+                display: flex;
+                background-color:#fafafa ;
+                margin-top: 2rem;
+            }
+            .boxsupport{
+                width: 33.3%;
+                padding: 2rem 1rem;
+                text-align: justify;
+            }
+            .boxsupports .active{
+                background-color: #333333;
+                color: white;
+                transform: scale(1.1)
+            }
+            .minlogo{
+                background-color: black;
+                color: white;
+                padding: 20px;
+                border-radius: 50%;
+    
+            }
+            .fa-star{
+                color: #ffbb0d;
+            }
+            .star{
+                margin-left: 1rem;
+            }
+            .back-to-shop{
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                color: rgb(140, 140, 140);
 
             }
+            .back-to-shop i{
+                margin-right: 2rem
+            }
         }
+        
     }
  }
 
