@@ -5,10 +5,10 @@ $light-s-color: #bababa;
 $light-th-color: #d7d7d7;
 $light-fo-color: #333333;
 $like: #ff0c63;
-$dark-f-color: #c6538c;
-$dark-s-color: #c6538c;
+$dark-f-color: #333333;
+$dark-s-color: #fcfcfc;
 $dark-th-color: #c6538c;
-$dark-fo-color: #c6538c;
+$dark-fo-color: #fcfcfc;
 
 @import 'reset';
 
@@ -16,6 +16,11 @@ $dark-fo-color: #c6538c;
     .#{$theme-name} {
         html ,body{
             background-color: $container-bg;
+        }
+        .contents{
+            width: 100%;
+            background-color: $container-bg;
+
         }
         main {
             background-color: $container-bg;

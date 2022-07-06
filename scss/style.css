@@ -32,6 +32,9 @@ table {
 
 .lightmode html, .lightmode body {
   background-color: #fcfcfc; }
+.lightmode .contents {
+  width: 100%;
+  background-color: #fcfcfc; }
 .lightmode main {
   background-color: #fcfcfc;
   margin: 0 auto;
@@ -120,9 +123,12 @@ table {
     margin-right: .5rem; }
 
 .darkmode html, .darkmode body {
-  background-color: #c6538c; }
+  background-color: #333333; }
+.darkmode .contents {
+  width: 100%;
+  background-color: #333333; }
 .darkmode main {
-  background-color: #c6538c;
+  background-color: #333333;
   margin: 0 auto;
   width: 1200px; }
   .darkmode main * {
@@ -145,13 +151,13 @@ table {
     width: 100%;
     padding: 15px;
     border-color: transparent;
-    box-shadow: 0 0 0 1px #c6538c; }
+    box-shadow: 0 0 0 1px #fcfcfc; }
   .darkmode main .box-search_submit {
     position: absolute;
     right: 30px;
     top: 12px;
     font-size: 30px;
-    color: #c6538c; }
+    color: #fcfcfc; }
   .darkmode main .icon {
     width: 20%;
     display: flex;
@@ -188,7 +194,7 @@ table {
     padding: 0 0 0 2rem; }
   .darkmode main .desc {
     padding: 1rem 0;
-    color: #c6538c;
+    color: #fcfcfc;
     font-size: 2rem; }
   .darkmode main .button {
     background-color: #f7f7f7;
