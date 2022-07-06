@@ -1,8 +1,8 @@
 
 
-$light-f-color: #c6538c;
-$light-s-color: #c6538c;
-$light-th-color: #c6538c;
+$light-f-color: #fcfcfc;
+$light-s-color: #bababa;
+$light-th-color: #d7d7d7;
 $light-fo-color: #c6538c;
 $dark-f-color: #c6538c;
 $dark-s-color: #c6538c;
@@ -13,25 +13,51 @@ $dark-fo-color: #c6538c;
 
 @mixin themable($theme-name, $container-bg, $left-bg, $right-bg, $innertext, $button-bg) {
     .#{$theme-name} {
-        .container {
+        main {
             background-color: $container-bg;
-            border: 1px solid #000;
-            display: flex;
-            height: 500px;
-            justify-content: space-between;
             margin: 0 auto;
-            padding: 1em;
-            width: 50%;
+            width: 1200px;
  
             * {
-                color: $innertext;
                 font-size: 1rem;
             }
- 
-            .left {
-                background-color: $left-bg;
-                height: 100%;
-                width: 69%;
+            header{
+                display: flex;
+                padding: 1rem 0;
+                align-items: center;
+            }
+            .logo{
+                width: 200px;
+            }
+            .search{
+                width: calc( 100% - 200px );
+                display: flex;
+                justify-content: space-between;
+            }
+            .box-search{
+                position: relative;
+                width: 80%;
+            }
+            .box-search_input{
+                width: 100%;
+                padding: 15px;
+                border-color: transparent;
+                box-shadow: 0 0 0 1px  $left-bg;
+
+            }
+            .box-search_submit{
+                position: absolute;
+                right: 30px;
+                top: 12px;
+                font-size: 30px;
+                color: $left-bg;
+            }
+            .icon{
+                width: 20%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
             }
  
             .right {
@@ -57,5 +83,5 @@ $dark-fo-color: #c6538c;
     }
  }
 
- @include themable(lightmode, #f7eb80, #497265, #82aa91, #fff, #bc6a49);
-@include themable(darkmode, #e4ada7, #d88880, #cc6359, #fff, #481b16);
+ @include themable(lightmode, $light-f-color, $light-s-color, $light-th-color, $light-fo-color, #bc6a49);
+@include themable(darkmode, $dark-f-color, $dark-s-color, $dark-th-color, $dark-fo-color, #481b16);

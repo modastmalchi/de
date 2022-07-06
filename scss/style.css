@@ -30,28 +30,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.lightmode .container {
-  background-color: #f7eb80;
-  border: 1px solid #000;
-  display: flex;
-  height: 500px;
-  justify-content: space-between;
+.lightmode main {
+  background-color: #fcfcfc;
   margin: 0 auto;
-  padding: 1em;
-  width: 50%; }
-  .lightmode .container * {
-    color: #fff;
+  width: 1200px; }
+  .lightmode main * {
     font-size: 1rem; }
-  .lightmode .container .left {
-    background-color: #497265;
-    height: 100%;
-    width: 69%; }
-  .lightmode .container .right {
-    background-color: #82aa91;
+  .lightmode main header {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center; }
+  .lightmode main .logo {
+    width: 200px; }
+  .lightmode main .search {
+    width: calc( 100% - 200px );
+    display: flex;
+    justify-content: space-between; }
+  .lightmode main .box-search {
+    position: relative;
+    width: 80%; }
+  .lightmode main .box-search_input {
+    width: 100%;
+    padding: 15px;
+    border-color: transparent;
+    box-shadow: 0 0 0 1px #bababa; }
+  .lightmode main .box-search_submit {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    font-size: 30px;
+    color: #bababa; }
+  .lightmode main .icon {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .lightmode main .right {
+    background-color: #d7d7d7;
     height: 100%;
     position: relative;
     width: 29%; }
-  .lightmode .container .button {
+  .lightmode main .button {
     background-color: #bc6a49;
     border: 0;
     border-radius: 10px;
@@ -63,28 +82,47 @@ table {
     position: absolute;
     right: 10px; }
 
-.darkmode .container {
-  background-color: #e4ada7;
-  border: 1px solid #000;
-  display: flex;
-  height: 500px;
-  justify-content: space-between;
+.darkmode main {
+  background-color: #c6538c;
   margin: 0 auto;
-  padding: 1em;
-  width: 50%; }
-  .darkmode .container * {
-    color: #fff;
+  width: 1200px; }
+  .darkmode main * {
     font-size: 1rem; }
-  .darkmode .container .left {
-    background-color: #d88880;
-    height: 100%;
-    width: 69%; }
-  .darkmode .container .right {
-    background-color: #cc6359;
+  .darkmode main header {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center; }
+  .darkmode main .logo {
+    width: 200px; }
+  .darkmode main .search {
+    width: calc( 100% - 200px );
+    display: flex;
+    justify-content: space-between; }
+  .darkmode main .box-search {
+    position: relative;
+    width: 80%; }
+  .darkmode main .box-search_input {
+    width: 100%;
+    padding: 15px;
+    border-color: transparent;
+    box-shadow: 0 0 0 1px #c6538c; }
+  .darkmode main .box-search_submit {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    font-size: 30px;
+    color: #c6538c; }
+  .darkmode main .icon {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .darkmode main .right {
+    background-color: #c6538c;
     height: 100%;
     position: relative;
     width: 29%; }
-  .darkmode .container .button {
+  .darkmode main .button {
     background-color: #481b16;
     border: 0;
     border-radius: 10px;
