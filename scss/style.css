@@ -30,4 +30,70 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.lightmode .container {
+  background-color: #f7eb80;
+  border: 1px solid #000;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+  width: 50%; }
+  .lightmode .container * {
+    color: #fff;
+    font-size: 1rem; }
+  .lightmode .container .left {
+    background-color: #497265;
+    height: 100%;
+    width: 69%; }
+  .lightmode .container .right {
+    background-color: #82aa91;
+    height: 100%;
+    position: relative;
+    width: 29%; }
+  .lightmode .container .button {
+    background-color: #bc6a49;
+    border: 0;
+    border-radius: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em 2em;
+    position: absolute;
+    right: 10px; }
+
+.darkmode .container {
+  background-color: #e4ada7;
+  border: 1px solid #000;
+  display: flex;
+  height: 500px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1em;
+  width: 50%; }
+  .darkmode .container * {
+    color: #fff;
+    font-size: 1rem; }
+  .darkmode .container .left {
+    background-color: #d88880;
+    height: 100%;
+    width: 69%; }
+  .darkmode .container .right {
+    background-color: #cc6359;
+    height: 100%;
+    position: relative;
+    width: 29%; }
+  .darkmode .container .button {
+    background-color: #481b16;
+    border: 0;
+    border-radius: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em 2em;
+    position: absolute;
+    right: 10px; }
+
 /*# sourceMappingURL=style.css.map */
